@@ -70,4 +70,7 @@ footer {
 	.android-logo {
 		margin: -30px;
 	}
+	.line::after{
+		bottom: -2.5em;
+	}
 }	
