@@ -1,0 +1,124 @@
+@import url("https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans+Condensed:300");
+
+body{
+  background-color: white;
+}
+.timeline-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font: normal 16px/26px Open Sans Condensed, sans-serif;
+  color: #fff;
+  padding: 100px 20px 200px;
+  box-sizing: border-box;
+}
+
+.timeline-block {
+  z-index: 1;
+  position: relative;
+}
+.timeline-block:before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 40px);
+  width: 1px;
+  background-color: #f6434c;
+  left: 50%;
+  margin-top: 90px;
+}
+
+.timeline-title {
+  font: bold 42px/52px Open Sans Condensed, sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #f6434c;
+  transition: all 0.8s ease-in-out;
+}
+
+.timeline-each-event {
+  background-color: #f6434c;
+  color: white;
+  padding: 15px;
+  margin: 60px 20px;
+  width: 300px;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.timeline-each-event:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  left: -27px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f6434c;
+  box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
+}
+.timeline-each-event:nth-child(odd) {
+  margin-left: calc(50% + 20px);
+}
+.timeline-each-event:nth-child(even) {
+  margin-left: calc(50% - 321px);
+}
+.timeline-each-event:nth-child(even):before {
+  left: calc(100% + 14px);
+}
+
+.timeline-title.non-focus {
+  font-size: 24px;
+  line-height: 34px;
+  transition: all 0.8s ease-in-out;
+}
+
+.timeline-each-event.non-focus {
+  color: black;
+  background: #f6434c;
+  margin-top: 90px;
+  transform: rotateZ(45deg);
+  transition: all 0.8s ease-in-out;
+}
+.timeline-each-event.non-focus:before {
+  opacity: 0;
+  background-color: #aaa;
+}
+
+.timeline-date{
+  font-family: cursive;
+}
+
+.discord-icon{
+  border-radius: 10px; 
+  width: 50px;
+}
+
+@media (max-width : 480px){
+  .timeline-wrapper{
+    max-width: min-content;
+    
+  }
+  .timeline-event-description{
+    font-size: 60%;
+  }
+  .timeline-each-event:nth-child(odd){
+    width: 150px;
+    height: auto;
+  }
+  .timeline-each-event:nth-child(even){
+    width: 150px;
+    height: auto;
+    left: calc(50% + 255px);
+  }
+  .timeline-each-event:nth-child(even)::before{
+    position: absolute;
+    left: -27px;
+  }
+
+  .discord-icon{
+    width: 35px;
+  }
+
+}
+

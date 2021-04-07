@@ -1,1 +1,675 @@
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+        </style>
+        <style>
+            .gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}
+        </style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head -->
+
+    <!-- SITE TITLE -->
+    <title>TetraFlip</title>
+    <meta name="description" content="TetraFlip 2021">
+    <meta name="keywords" content="Bootstrap3, Event,  Conference, Meetup, Template, Responsive, HTML5">
+    <meta name="author" content="themearth.com">
+
+    <!-- twitter card starts from here, if you don't need remove this section -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@yourtwitterusername">
+    <meta name="twitter:creator" content="@yourtwitterusername">
+    <meta name="twitter:url" content="http://yourdomain.com">
+    <meta name="twitter:title" content="Your home page title, max 140 char">
+    <!-- maximum 140 char -->
+    <meta name="twitter:description" content="Your site description, maximum 140 char ">
+    <!-- maximum 140 char -->
+    <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-280-150.jpg">
+    <!-- when you post this page url in twitter , this image will be shown -->
+    <!-- twitter card ends from here -->
+
+    <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
+    <meta property="og:title" content="Your home page title">
+    <meta property="og:url" content="http://your domain here.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Your site name here">
+    <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/opengraph/fbphoto.jpg">
+    <!-- when you post this page url in facebook , this image will be shown -->
+    <!-- facebook open graph ends from here -->
+
+    <!--  FAVICON AND TOUCH ICONS -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon.ico"> -->
+    <!-- <link rel="icon" type="image/png" href="Emeet_files/TF_LOGO.png"/> -->
+    <link rel="shortcut icon" type="image/x-icon" href="Emeet_files/favicon.ico">
+    <!-- this icon shows in browser toolbar -->
+    <!-- <link rel="icon" type="image/x-icon" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon.ico"> -->
+    <!-- this icon shows in browser toolbar -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://themearth.com/demo/html/emeet/view/assets/img/favicon/favicon-16x16.png">
+
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./Emeet_files/bootstrap.min.css" media="all">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./Emeet_files/font-awesome.min.css" media="all">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./Emeet_files/magnific-popup.css" media="all">
+
+    <!-- Time Circle -->
+    <link rel="stylesheet" href="./Emeet_files/TimeCircles.css" media="all">
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="./Emeet_files/owl.carousel.min.css" media="all">
+    <link rel="stylesheet" href="./Emeet_files/owl.theme.default.min.css" media="all">
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="./Emeet_files/css">
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="lgx-master-style" rel="stylesheet" href="./Emeet_files/style-default.min.css" media="all">
+
+    <!-- FAQ's -->
+    <link rel="stylesheet" href="./Emeet_files/index.css">
+    <!-- FAQ's END-->    
+
+    <!--TIMELINE CSS-->
+    <link rel="stylesheet" href="./Emeet_files/timeline.css">
+
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="./Emeet_files/footer.css">
+
+    <!-- timeline -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".accordion_body .li_qus").click(function() {
+                $(this).parent().toggleClass("active");
+            });
+        })
+    </script>
+    <!-- MODERNIZER CSS  -->
+    <script src="./Emeet_files/modernizr-2.8.3.min.js.download"></script>
+<script type="text/javascript" charset="UTF-8" src="./Emeet_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Emeet_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Emeet_files/map.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Emeet_files/marker.js.download"></script><link rel="stylesheet" href="./Emeet_files/demo-themeoptions.css" media="all"><script type="text/javascript" charset="UTF-8" src="./Emeet_files/infowindow.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Emeet_files/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Emeet_files/AuthenticationService.Authenticate"></script></head>
+
+<body class="home">
+
+<div class="lgx-container ">
+<!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+
+
+<!--HEADER-->
+<header>
+    <div id="lgx-header" class="lgx-header">
+        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed"> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
+            <div class="lgx-container-fluid"> <!--lgx-container-fluid-->
+                <nav class="navbar navbar-default lgx-navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="lgx-logo">
+                            <a href="http://themearth.com/demo/html/emeet/view/index.html" class="lgx-scroll">
+                                <img class = "lgx-imlogo" src="./Emeet_files/TF_LOGO.png" alt="Emeet Logo" height = "100" width = "150">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav lgx-nav navbar-right">
+                            <li><a class="lgx-scroll" href="#banner">HOME</a></li>
+                            <li><a class="lgx-scroll" href="#about">ABOUT</a></li>
+                            <!-- <li><a class="lgx-scroll" href="#">Speaker</a></li> -->
+                            <li><a class="lgx-scroll" href="#sponsors">Sponsors</a></li>
+                            <li><a class="lgx-scroll" href="#timeline">TIMELINE</a></li>
+                            <li><a class="lgx-scroll" href="#gallery">Gallery</a></li>
+                            <li><a class="lgx-scroll" href="#faq">FAQs</a></li>
+                            <li><a class="lgx-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </nav>
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+    </div>
+</header>
+<!--HEADER END-->
+
+
+
+
+
+    <!--BANNER-->
+    <section id="banner">
+        <div id="lgx-parallax-banner" class="lgx-banner lgx-banner-parallax"> <!--lgx-about-bottom-->
+            <div class="lgx-section">
+                <div id="layer-wrapper" class="lgx-item-parallax-banner">
+
+                    <div id="object1" class="bglayer1 hidden-sm hidden-xs" style="transform: translate3d(-122.75px, -14.8333px, 0px);">
+                        <img src="./Emeet_files/3.png" alt="">
+                    </div>
+                    <div id="object5" class="rightlayer1 hidden-sm hidden-xs" style="transform: translate3d(-24.55px, -2.96667px, 0px);">
+                        <img src="./Emeet_files/4.png" alt="">
+                    </div>
+                    <div id="object2" class="bglayer2 hidden-sm hidden-xs" style="transform: translate3d(-61.375px, -7.41667px, 0px);">
+                        <img src="./Emeet_files/5.png" alt="">
+                    </div>
+                    <div id="object6" class="rightlayer2shade hidden-sm hidden-xs" style="transform: translate3d(-122.75px, -2.96667px, 0px);">
+                        <img src="./Emeet_files/7.png" alt="">
+                    </div>
+                    <div id="object7" class="rightlayer2 hidden-sm hidden-xs" style="transform: translate3d(-98.2px, -2.96667px, 0px);">
+                        <img src="./Emeet_files/6.png" alt="">
+                    </div>
+
+                    <div class="banner-content">
+                        <div class="lgx-hover-link">
+                            <div class="lgx-vertical">
+                                <div class="lgx-banner-info lgx-banner-info-center"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg--> <!--banner-info-margin-->
+                                    <div class="lgx-countdown-area">
+                                        <!-- Date Format :"Y/m/d" || For Example: 1017/10/5  -->
+                                        <div id="lgx-countdown" data-date="2021/4/30"><span class="lgx-days">252 <i> Days </i></span> <span class="lgx-hr">21 <i> Hour </i></span> <span class="lgx-min">19 <i> Minu </i></span> <span class="lgx-sec">51 <i> Seco </i></span></div>
+                                    </div>
+                                    <h2 class="title">TETRAFLIP <span><b>2</b><b>0</b><b>2</b><b>1</b></span></h2>
+                                    <!-- <h3 class="location"><i class="fa fa-map-marker"></i> 21 King Street, Dhaka 1205, Bangladesh.</h3> -->
+                                    <h3 class="date"><i class="fa fa-calendar"></i> 30th April - 2nd May, 2021</h3>
+                                    <h3><a href="https://discord.com/" target="_blank"> <img src="./Emeet_files/discord.png" class="discord-icon"> </a> </h3>
+                                    <div class="action-area">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+    <!--BANNER END-->
+
+
+
+
+
+    <!--ABOUT-->
+    <section id="about">
+        <div id="lgx-about" class="lgx-about lgx-about2">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-5 col-sm-12 col-md-7">
+                            <div class="lgx-about-content-area">
+                                <div class="lgx-heading">
+                                    <h2 class="heading">ABOUT US</h2>
+                                    <h3 class="subheading">Lorem Ipsum dolor sit amet?</h3>
+                                </div>
+                                <div class="lgx-about-content">
+                                    <p class="text">
+                                        Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are ultricies mi senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae vitae.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
+    <!--ABOUT END-->
+
+
+<!--SPONSORED-->
+<section id="sponsors">
+    <div id="lgx-sponsors" class="lgx-sponsors lgx-sponsors-black">
+        <div class="lgx-inner-bg">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">Offcial Sponsors</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//main row-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="sponsors-area sponsors-area-colorfull-border">
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor-sp3.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor2.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor-sp1.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor5.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor1.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor3.png" alt="sponsor"></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="http://themearth.com/demo/html/emeet/view/index3.html#"><img src="./Emeet_files/sponsor4.png" alt="sponsor"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//col-->
+                    </div>
+                </div>
+                <!--//container-->
+            </div>
+        </div>
+        <!--//lgx-inner-->
+    </div>
+</section>
+<!--SPONSORED END-->
+
+<!--TIMELINE START-->
+<section id="timeline">
+    <div class="timeline-wrapper">
+        <section class="timeline-block">
+        <div class="timeline-each-year">
+            <div class="timeline-title">April</div>
+            <div class="timeline-each-event">
+            <div class="timeline-event-description">
+                <strong class="timeline-date">3rd April</strong><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam molestiae sint ut sit sed impedit, minus, eligendi modi.
+            </div>
+            </div>
+        
+        <div class="timeline-each-event">
+            <div class="timeline-event-description">
+            <strong class="timeline-date">5th April</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vitae, ex voluptates repudiandae molestias modi veniam cumque, iusto qui quia illum ipsa laborum adipisci porro nulla magnam error eligendi? Quos!
+            </div>
+        </div>
+        
+        <div class="timeline-each-event">
+            <div class="timeline-event-description">
+            <strong class="timeline-date">10th April</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vitae, ex voluptates repudiandae molestias modi veniam cumque, iusto qui quia illum ipsa laborum adipisci porro nulla magnam error eligendi? Quos!
+            </div>
+        </div>
+        
+        <div class="timeline-each-event">
+            <div class="timeline-event-description">
+            <strong class="timeline-date">15th April</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vitae, ex voluptates repudiandae molestias modi veniam cumque, iusto qui quia illum ipsa laborum adipisci porro nulla magnam error eligendi? Quos!
+            </div>
+        </div>
+        
+        <div class="timeline-each-event">
+            <div class="timeline-event-description">
+            <strong class="timeline-date">20th April</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vitae, ex voluptates repudiandae molestias modi veniam cumque, iusto qui quia illum ipsa laborum adipisci porro nulla magnam error eligendi? Quos!
+            </div>
+        </div>
+        
+            <div class="timeline-each-event">
+            <div class="timeline-event-description">
+                <strong class="timeline-date">29th April</strong><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vitae, ex voluptates repudiandae molestias modi veniam cumque, iusto qui quia illum ipsa laborum adipisci porro nulla magnam error eligendi? Quos!
+            </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="timeline-block">
+        <div class="timeline-each-year">
+        <div class="timeline-title">May</div>
+        </div>
+        </section>
+        </div>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+</section>    
+       
+    <!--TIMELINE END-->
+
+    <!--PHOTO GALLERY-->
+    <section id="gallery">
+        <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">Photo Gallery</h2>
+                                <h3 class="subheading">Welcome to the dedicated to building remarkable Sponsores!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-gallery-area">
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img title="Memories One" src="./Emeet_files/gallery4.jpg" alt="Memories one">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories One" href="./Emeet_files/gallery4.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="./Emeet_files/gallery2.jpg" alt="Memories Two" title="Memories Two">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Two" href="./Emeet_files/gallery2.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>  <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="./Emeet_files/gallery3.jpg" alt="Memories Three" title="Memories Three">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Three" href="./Emeet_files/gallery3.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="./Emeet_files/gallery4.jpg" alt="Memories Four" title="Memories Four">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Four" href="./Emeet_files/gallery4.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="./Emeet_files/gallery5.jpg" alt="Memories Five" title="Memories Five">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Five" href="./Emeet_files/gallery5.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="./Emeet_files/gallery6.jpg" alt="Memories Six" title="Memories Six">
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Six" href="./Emeet_files/gallery6.jpg">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PHOTO GALLERY END-->
+
+
+    
+
+
+<!-- FAQ's -->
+
+<section id="faq">
+    <div class="lgx-heading">
+        <h1 class="heading">FAQ's</h1>
+    </div>
+    <div class="wrapper">
+        <div class="accordion_container">
+            <div class="accordion_header">
+                FAQs Accordion
+            </div>
+            <div class="accordion_body">
+                <ul>
+                    <li>
+                        <div class="li_qus">
+                            <div class="btn"></div>
+                            <p class = "li_desc">Will the mission be harmful to Mars environment? </p>
+                        </div>
+                        <div class="li_ans">
+                            Mars One will take specific steps to ensure that the Mars environment (which we will study, and on which we will depend) will not be harmed. The Mars base will be forced to recycle just about everything, and pay close attention to its energy use and minimize
+                            the leakage of materials and energy. Nutrients are scarce on Mars. They either need to be imported from Earth, or extracted from the ground or atmosphere. Solar panels, which will also be launched from Earth, will generate
+                            the settlement's electricity. All of this means that a Mars resident will have a much smaller ecological footprint than that of the average person on Earth.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_qus">
+                            <div class="btn"></div>
+                            <p>Is this a sustainable mission?</p>
+                        </div>
+                        <div class="li_ans">
+                            A sustainable base on Mars is capable of generating its own power, sustenance and provisions. Solar panels can generate all of the settlement's energy with only sunlight as fuel. The base will also recycle as much as they can to avoid more resources having
+                            to be sent from Earth or having to delve for more in the local air and soil. When it comes to provisions, their independence will increase steadily, starting with their own production of oxygen and water when they land. The
+                            first four will also be carrying a device similar to a portable greenhouse, that will allow them to grow their own food.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_qus">
+                            <div class="btn"></div>
+                            <p>What are the risks of dust and sand on Mars? </p>
+                        </div>
+                        <div class="li_ans">
+                            All equipment that will be sent to Mars must be built specifically to withstand the conditions there. The environment of Mars contains dust that is much finer than that found on Earth. While the exact effects of this fine dust on technical hardware and
+                            equipment are not fully known, it is not impossible to engineer equipment that can handle the dust. The NASA rovers Spirit and Opportunity were designed to operate for a minimum of 90 days, but have exceeded their target lifespans
+                            substantially. Spirit lasted about 1900 days. Opportunity is still driving around and investigating Mars since January 2004.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_qus">
+                            <div class="btn"></div>
+                            <p>Why should we go to Mars?</p>
+                        </div>
+                        <div class="li_ans">
+                            The first is the realization of an amazing dream! Sending a manned mission to Mars is a fantastic adventure. Imagine living on another planet, millions of miles from the Earth; looking up into the sky with the knowledge that one of the 'stars' is actually
+                            the planet you were born on. Who can even envision the incredible feeling of being the first human in history to step out of the capsule and leave your footprint on the surface of Mars? By this we implore you to not just think
+                            of that feeling for the astronaut, but the experience for all those watching back home. Those who observed Neil Armstrong land on the Moon all those years ago still remember every detail – where they were, who they were with
+                            and how they felt. The moment the first astronauts land on Mars will be our moment to remember.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_qus">
+                            <div class="btn"></div>
+                            <p>Why Mars, and not another planet?</p>
+                        </div>
+                        <div class="li_ans">
+                            The only other two celestial bodies in orbits near the Earth are our Moon and Venus. There are far fewer vital resources on the Moon, and a Moon day takes a month. It also does not have an atmosphere to form a barrier against radiation. Venus is a veritable
+                            purgatory. The average temperature is over 400 degrees, the barometric pressure is that of 900 meters underwater on Earth, and the cherry on top comes in the form of occasional bouts of acid rain. It also has nights that last
+                            for 120 days. Humans cannot live on Mars without the help of technology, but compared to Venus it's paradise!
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ's END -->
+    
+
+<!-- SCROLL TO TOP -->
+<section>
+<button id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+</section>
+<!-- SCROLL TO TOP END -->
+
+<!--FOOTER-->
+<section id="contact">
+    <footer class = "foot">
+        <div class = "container-fluid overlay">
+        <div class = "row border">
+            <div class = "col-md-6 hiih">
+                <div>
+            <img src="./Emeet_files/owasp-logo.png" class = "owasp-logo" width = "200" height = "200">
+            <h2 class = "foot-head"><span class = "line"></span>OWASP VIT&#174;</h2>
+            <p class = "para ml-3 my-3">At GRAN TURISMO&#174; our ultimate desire is to cater colossal luxury from the amenity of your home. With over 10 luxury brands being our trusted partners we deliver richness and opulence at your doorstep.</p>
+        </div>
+        <div>
+            <p class = "icon-tray">
+                <span><i class="fas fa-map-marker-alt main-icons mt-1"></i>Find Us: Vellore Institute of Technology, Chennai</span>
+            </p>
+            <p class = "icon-tray">    
+                <span><i class="far fa-envelope-open main-icons mt-1"></i>Mail Us at: owasp@vit.ac.in</span>
+            </p>  
+        </div>
+        <div>
+            <p class = "icon-tray">
+                <span><i class="fab fa-instagram main-icons mr-4 mt-1"></i></span>
+                <span><i class="fab fa-facebook-f main-icons mr-4 mt-1"></i></span>
+                <span><i class="fab fa-twitter main-icons mr-4 mt-1"></i></span>
+            </p>  
+        </div>
+            </div>
+            <div class = "col-md-6">
+            <div>
+                <img src="./Emeet_files/android-logo.png" class = "android-logo" width = "200" height = "200">
+            <h2 class = "foot-head"><span class = "line"></span>ANDROID CLUB VIT&#174;</h2>
+            <p class = "para ml-3 my-3">At GRAN TURISMO&#174; our ultimate desire is to cater colossal luxury from the amenity of your home. With over 10 luxury brands being our trusted partners we deliver richness and opulence at your doorstep.</p> 
+            </div>
+        <div>
+            <p class = "icon-tray">
+                <span><i class="fas fa-map-marker-alt main-icons mt-1"></i>Find Us: Vellore Institute of Technology, Chennai</span>
+            </p>
+            <p class = "icon-tray">    
+                <span><i class="far fa-envelope-open main-icons mt-1"></i>Mail Us at: android@vit.ac.in</span>
+            </p>  
+        </div>
+        <div>
+            <p class = "icon-tray">
+                <span><i class="fab fa-instagram main-icons mr-4 mt-1"></i></span>
+                <span><i class="fab fa-facebook-f main-icons mr-4 mt-1"></i></span>
+                <span><i class="fab fa-twitter main-icons mr-4 mt-1"></i></span>
+            </p>  
+        </div>
+            </div>
+        </div>
+        <div class = "text-center">
+            <h4><span>©</span> 2021 powered by TetraFlip.</a> The property of their owners.</h4>
+        </div>
+        </div>
+    </footer> 
+</section>
+  <!-- FOOTER END -->
+
+
+</div>
+<!--//.LGX SITE CONTAINER-->
+<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+<!-- JQUERY  -->
+<script src="./Emeet_files/jquery-1.12.4.min.js.download"></script>
+
+<!-- BOOTSTRAP JS  -->
+<script src="./Emeet_files/bootstrap.min.js.download"></script>
+
+<!-- Smooth Scroll  -->
+<script src="./Emeet_files/jquery.smooth-scroll.js.download"></script>
+
+<!-- SKILLS SCRIPT  -->
+<script src="./Emeet_files/jquery.validate.js.download"></script>
+
+<!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
+<script type="text/javascript" src="./Emeet_files/js"></script>
+
+<!-- CUSTOM GOOGLE MAP -->
+<script type="text/javascript" src="./Emeet_files/jquery.googlemap.js.download"></script>
+
+<!-- adding magnific popup js library -->
+<script type="text/javascript" src="./Emeet_files/jquery.magnific-popup.min.js.download"></script>
+
+<!-- Owl Carousel  -->
+<script src="./Emeet_files/owl.carousel.min.js.download"></script>
+
+<!-- COUNTDOWN   -->
+<script src="./Emeet_files/countdown.js.download"></script>
+<script src="./Emeet_files/TimeCircles.js.download"></script>
+
+<!-- Counter JS -->
+<script src="./Emeet_files/waypoints.min.js.download"></script>
+<script src="./Emeet_files/jquery.counterup.min.js.download"></script>
+
+<!-- SMOTH SCROLL -->
+<script src="./Emeet_files/jquery.smooth-scroll.min.js.download"></script>
+<script src="./Emeet_files/jquery.easing.min.js.download"></script>
+<script src="./Emeet_files/scroll.js"></script>
+
+<!-- type js -->
+<script src="./Emeet_files/typed.min.js.download"></script>
+
+<!-- header parallax js -->
+<script src="./Emeet_files/header-parallax.js.download"></script>
+
+<!-- instafeed js -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>-->
+<script src="./Emeet_files/instafeed.min.js.download"></script>
+
+<!-- CUSTOM SCRIPT  -->
+<script src="./Emeet_files/custom.script.js.download"></script>
+
+
+<!-- For Demo Purpose Only// Remove From Live -->
+<script src="./Emeet_files/switcher.js.download"></script>
+<!-- For Demo Purpose Only //Remove From Live-->
+
+<!--TIMELINE JS-->
+<script src="./Emeet_files/timeline.js"></script>
+
+<script src="https://kit.fontawesome.com/a21a405680.js" crossorigin="anonymous"></script>
+
+
+</body></html>

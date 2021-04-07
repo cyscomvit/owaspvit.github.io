@@ -1,0 +1,73 @@
+footer {
+  position: relative;
+  top: 16em;
+}
+
+
+.foot-head {
+  display: inline-block;
+  color: #ff7675;
+}
+
+.line {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1.5em;
+  width: 30%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s;
+}
+
+.para {
+	margin-top: 20px;
+	color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 13, 26, 1);
+  padding: 60px 20px;
+}
+
+.main-icons {
+  font-size: 28px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 5px 10px;
+  transition: all 0.4s;
+  color: #ff7675;
+}
+
+.main-icons:hover {
+  background-color: black;
+  color: white;
+}
+
+.foot-head:hover .line::after {
+  width: 100%;
+}	
+
+.icon-tray > span {
+	color: white;
+}
+
+.owasp-logo {
+	margin-right: 20px;
+}
+
+@media(max-width: 768px) {
+	.hiih {
+		margin-bottom: 20px;
+	}	
+	.android-logo {
+		margin: -30px;
+	}
+}	
