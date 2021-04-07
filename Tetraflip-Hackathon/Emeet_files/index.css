@@ -106,11 +106,11 @@ body {
 }
 
 .accordion_container .accordion_body ul li.active {
-    height: 560px;
+    height: 200px;
 }
 
 .accordion_container .accordion_body ul li.active .li_ans {
-    height: 500px;
+    height: 180px;
 }
 
 .accordion_container .accordion_body ul li.active .li_qus .btn:after {
