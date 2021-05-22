@@ -9,6 +9,3 @@
   background: linear-gradient(#663399, #f46c93);
   border-radius: 6px;
 }
-::-webkit-scrollbar-thumb:hover {
-  cursor: pointer;
-}
