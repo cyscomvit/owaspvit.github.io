@@ -12,11 +12,24 @@
 		<link href="assets/style.min.css" rel="stylesheet">
 		<link href="assets/fonts.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/customScrollBar.css">
+         <link rel="stylesheet" href="loader.css">
+		
+		
 	</head>
-	<body data-gr-c-s-loaded="true" style="overflow: visible;">
-		<div class="preloader-container" style="display: none;">
-			<div class="loader" style="display: none;"></div>
+
+
+	<body data-gr-c-s-loaded="true" style="overflow: hidden;" class="home_load load_test" >
+		
+		<div class="pre_loader">
+		<div class="ring">
+			LOADING...
+			<span>
+	
+			</span>
 		</div>
+	</div>
+
+	
 		<header class="">
 			<div class="container">
 				<div class="row">
@@ -768,6 +781,8 @@
 				<div class="scrollToTop-icon"></div>
 			</div>
 		</div>
+		
+		<script src="loader.js"></script>
 		<script src="assets/assets.min.js"></script>
         <script src="assets/main.min.js"></script>
 	</body>
