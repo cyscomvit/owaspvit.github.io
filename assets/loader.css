@@ -16,13 +16,13 @@
 
 .ring{
     
-    padding: 25px;
+    
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background: black;
     border: 3px solid #3c3c3c;
     border-radius: 50%;
@@ -31,9 +31,9 @@
     align-items: center;
     line-height: 150px;
     font-size: 20px;
-    color: #fff000;
+    color: #fff;
     Letter-spacing: 4px;
-    text-shadow: 0 0 10px #fff000;
+    text-shadow: 0 0 10px #c90e44;
     box-shadow: 0 0  20px rgba(0,0,0,0.5);
     z-index: 9999999;
 
@@ -48,8 +48,8 @@
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
-    border-top: 3px solid #fff000;
-    border-right: 3px solid #fff000;
+    border-top: 3px solid #7f3fbf;
+    border-right: 3px solid #7f3fbf;
     border-radius: 50%;
     animation: animateCircle 2s linear infinite;
 }
@@ -72,10 +72,11 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #fff000;
+    /* background: #f46c93; */
+    background: #fff;
     top:-6px;
     right: -8px;
-    box-shadow: 0 0 20px #fff000;
+    box-shadow: 0 0 20px #fff;
 }
 
 @keyframes animateCircle
