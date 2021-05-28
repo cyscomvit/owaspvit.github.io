@@ -1,11 +1,15 @@
 ::-webkit-scrollbar {
-  width: 11px;
+	width: 11px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#f46c93, #663399);
-  border-radius: 6px;
+	background: linear-gradient(#f46c93, #663399);
+	border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#663399, #f46c93);
-  border-radius: 6px;
+	background: linear-gradient(#663399, #f46c93);
+	border-radius: 6px;
+}
+.scroller {
+	scrollbar-color: #663399 #f46c93;
+	scrollbar-width: thin;
 }
