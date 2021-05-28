@@ -8,5 +8,5 @@ window.addEventListener("load", ()=> {
 	setTimeout(function(){
 		loader.style.display='none';
 		hom_lod.classList.remove("home_load");
-	},3000);	
+	},200);	
 })
