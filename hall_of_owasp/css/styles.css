@@ -5,22 +5,24 @@
         margin: 0;
         font-family: "Rajdhani", sans-serif;
         background-image: url("../images/stars.gif");
-        /*overflow-x: hidden;*/
+        overflow-x: hidden;
         align-items: center;
         scroll-behavior: smooth;
         min-height: 100vw;
         display: flex;
+        width: 100vw;
     }
-    .sample-section{
-        background-color: black;
-        height: 50%;
-    }
-    .sample-header-section {
-        position: relative;
-        max-width: 50vw;
-        color: white;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    }
+.sample-header-section {
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+    /*.sample-header-section {*/
+    /*    position: relative;*/
+    /*    max-width: 50vw;*/
+    /*    color: white;*/
+    /*    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);*/
+    /*}*/
     h1 {
         font-weight: 500;
     }
@@ -30,6 +32,10 @@
     .sample-section-wrap {
         position: relative;
     }
+    /*#canv{*/
+    /*    max-width:150vw;*/
+    /*    min-width:100vw;*/
+    /*}*/
 
     /*table {*/
     /*    border-collapse: collapse;*/
@@ -78,7 +84,7 @@
         padding: 1.17vw;
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 70%;
         height: 100%;
     }
     .snip1344 .profile {
@@ -86,7 +92,8 @@
         position: absolute;
         bottom: 25%;
         left: 50%;
-        max-width: 15.625vw;
+        max-width: 250px;
+        min-width: 200px;
         /*min-width: 15vw;*/
         opacity: 1;
         box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
@@ -95,7 +102,7 @@
         transform: translate(-50%, 0%);
     }
     .snip1344 h3 {
-        margin-top: 5.46vw;
+        margin-top: 20px;
         font-weight: 400;
     }
     .snip1344 h3 span {
@@ -126,29 +133,35 @@
         transform: scale(1.3);
     }
     h1{
-        padding: 0.8vw;
-        max-font-size: 20%;
+        padding: 10px;
+        max-font-size: 40px;
+        min-font-size: 34px;
         color: white;
+
     }
     h2{
-        padding: 0.8vw;
+        text-align: center;
         color: white;
-        font-size: 3.43vw;
+        font-size: 30px;
     }
     h3{
-        font-size: 2vw;
+        text-align: center;
+        font-size: 32px;
         color: white;
     }
     h4{
+        text-align: center;
         color: white;
-        font-size: 2.5vw;
+        font-size: 30px;
     }
     h5{
-        font-size: 1.5vw;
+        text-align: center;
+        font-size: 24px;
         color: white;
     }
     canvas{
-        max-height: 60%;
+        height:800px;
+        width:100vw;
     }
     @media screen and (max-width: 62.5vw) {
         .sample-section-wrap, .sample-header{
@@ -178,8 +191,9 @@
 
     }
     .yoda{
-        width: 30vw;
-        height: 33vw;
+        width: 400px;
+        height: 420px;
+        margin-right: 10px;
     }
     /* For mobile phones: */
     [class*="col-md"] {
