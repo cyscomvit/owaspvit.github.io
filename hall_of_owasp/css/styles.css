@@ -246,6 +246,6 @@ canvas {
 	border-width: 1px;
 }
 .button:hover {
-	color: black !important;
+	color: black;
 	background: white;
 }
