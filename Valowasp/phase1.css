@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('./images/val10.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+/* ------------------------------ScrollBar---------------------------------------------------- */
+.scrollBar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: #725c5c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #725c5c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #190A05, #725c5c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #725c5c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #190A05, #725c5c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #725c5c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+
+/* ----------------------Header------------------------------- */
+navbar-custom{
+    background: transparent !important;
+}
+
+img{
+    height:6rem;
+}
+home{
+    color: white;
+    font-size: 3rem;
+}
+
+/* Accordion */
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    /* background-color: rgb(27, 1, 255); */
+    color: rgb(255, 255, 255);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(32, 23, 23, 0.842);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.accordion-item-header {
+    padding: 2rem;
+    line-height: 5rem;
+    font-weight: bold;
+    /* display: flex; */
+    position: relative;
+    cursor: pointer;
+    height: 10rem;
+    font-size: 2rem;
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1.5rem;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+@media screen and (max-width: 700px) {
+    .accordion-item-header{
+        font-size: 1.2rem;
+    }
+    .accordion-item-header::after{
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Accordin cards BG */
+
+.ac1{
+    background: linear-gradient(rgba(0, 0, 0, 0.336),rgba(0,0,0,0)),url('./images/map22.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height:100px; */
+}
+
+.ac2{
+    background: linear-gradient(rgba(0, 0, 0, 0.336),rgba(0,0,0,0)),url('./images/map22.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height:100px; */
+}
+.ac3{
+    background: linear-gradient(rgba(0, 0, 0, 0.336),rgba(0,0,0,0)),url('./images/map22.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height:100px; */
+}
+.ac4{
+    background: linear-gradient(rgba(0, 0, 0, 0.336),rgba(0,0,0,0)),url('./images/map22.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height:100px; */
+}
+
+
+/* Accordion  content alignment*/
+
+.accordion-item-header .left-card{
+    width:40%;
+    display: inline-block;
+    align-self: left;
+    font-size: 1.5rem !important;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.accordion-item-header .right-card{
+    width:40%;
+    display: inline-block;
+    align-self: right;
+    font-size: 1.5rem !important;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:390px) {
+    .accordion-item-header{
+        font-size: 1rem !important;
+    }
+}
