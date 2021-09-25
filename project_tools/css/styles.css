@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+nav {
+  padding: 10px 15px;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+}
+
+.logo {
+  height: 70px;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    height: 50px;
+  }
+}
+
+.nav-ul {
+  display: block;
+  margin-top: -50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .nav-ul {
+    margin-top: -40px;
+  }
+}
+
+.item {
+  display: inline;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: clamp(0.6rem, 1.1vw, 1rem);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: animateBg 6s linear infinite;
+          animation: animateBg 6s linear infinite;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/images/bg2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.inner1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.inner2, .inner3 {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.inner2 h2, .inner3 h2 {
+  text-decoration: underline;
+}
+
+.inner2 h5, .inner3 h5 {
+  text-align: center;
+}
+
+.inner3 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sub-heading {
+  font-style: italic;
+  font-size: clamp(1.2rem, 3.2vw, 3rem);
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+
+.heading {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: clamp(2rem, 6.2vw, 6rem);
+  font-weight: 900;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+
+#about-heading {
+  position: static;
+  top: 0px;
+  opacity: 1;
+  font-size: clamp(2rem, 4.2vw, 4rem);
+}
+
+.tagline {
+  font-size: clamp(0.6rem, 1.3vw, 1.2rem);
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+
+.planet {
+  position: absolute;
+  height: 100px;
+  top: -25px;
+  right: 100px;
+  -webkit-animation: spin 60s linear alternate infinite;
+          animation: spin 60s linear alternate infinite;
+}
+
+.planet:hover {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translate(0, 0) rotateZ(0deg);
+            transform: translate(0, 0) rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-10rem, 10rem) rotateZ(180deg);
+            transform: translate(-10rem, 10rem) rotateZ(180deg);
+  }
+  50% {
+    -webkit-transform: translate(-20rem, 20rem) rotateZ(360deg);
+            transform: translate(-20rem, 20rem) rotateZ(360deg);
+  }
+  75% {
+    -webkit-transform: translate(-30rem, 30rem) rotateZ(540deg);
+            transform: translate(-30rem, 30rem) rotateZ(540deg);
+  }
+  100% {
+    -webkit-transform: translate(-40rem, 40rem) rotateZ(720deg);
+            transform: translate(-40rem, 40rem) rotateZ(720deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translate(0, 0) rotateZ(0deg);
+            transform: translate(0, 0) rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-10rem, 10rem) rotateZ(180deg);
+            transform: translate(-10rem, 10rem) rotateZ(180deg);
+  }
+  50% {
+    -webkit-transform: translate(-20rem, 20rem) rotateZ(360deg);
+            transform: translate(-20rem, 20rem) rotateZ(360deg);
+  }
+  75% {
+    -webkit-transform: translate(-30rem, 30rem) rotateZ(540deg);
+            transform: translate(-30rem, 30rem) rotateZ(540deg);
+  }
+  100% {
+    -webkit-transform: translate(-40rem, 40rem) rotateZ(720deg);
+            transform: translate(-40rem, 40rem) rotateZ(720deg);
+  }
+}
+
+.button {
+  padding: 10px 50px;
+  border-radius: 25px;
+  background-color: #fff176;
+  color: #000;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    padding: 7.5px 25px;
+  }
+}
+
+#about-button {
+  position: static;
+  top: 0px;
+  opacity: 1;
+}
+
+.data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 100px;
+}
+
+.data-wrapper h5 {
+  font-size: clamp(0.7rem, 1.4vw, 1.3rem);
+}
+
+.data-wrapper p {
+  font-size: clamp(0.5rem, 1.2vw, 1.1rem);
+  color: #f0f00e;
+}
+
+.person-image {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.about-text {
+  font-size: clamp(0.7rem, 1.4vw, 1.3rem);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.footer p {
+  color: #6b6a6a;
+}
+
+.footer span {
+  color: #6b6a6a;
+}
+
+.footer i {
+  padding: 0px 5px;
+  color: #6b6a6a;
+}
+
+@media screen and (max-width: 492px) {
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .person-image {
+    height: 80px;
+  }
+  .data-wrapper {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .data-wrapper {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .data-wrapper {
+    margin: 0 20px;
+  }
+  .planet {
+    height: 50px;
+    top: -25px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .person-image {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .person-image {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
