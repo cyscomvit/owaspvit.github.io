@@ -1780,6 +1780,7 @@ header .menutoggle {
 	padding: 0;
 	display: none;
 	float: right;
+	margin-top: 10px;
 	text-decoration: none;
 	outline: 0;
 	-webkit-tap-highlight-color: transparent
